@@ -1,0 +1,36 @@
+{
+  "name": "dancing-notes-starter",
+  "version": "1.0.2",
+  "private": true,
+  "scripts": {
+    "studio": "remotion studio src/index.ts",
+    "typecheck": "tsc --noEmit",
+    "validate": "node scripts/validate.mjs",
+    "render": "node scripts/render.mjs",
+    "test": "node --test scripts/regression.test.mjs"
+  },
+  "dependencies": {
+    "remotion": "4.0.518",
+    "@remotion/cli": "4.0.518",
+    "@remotion/three": "4.0.518",
+    "@react-three/fiber": "9.3.0",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "three": "0.180.0",
+    "verovio": "6.3.0",
+    "@remotion/renderer": "4.0.518"
+  },
+  "devDependencies": {
+    "typescript": "5.9.3",
+    "@types/react": "19.2.7",
+    "@types/three": "0.180.0",
+    "@types/web": "0.0.166"
+  },
+  "license": "MIT",
+  "author": "言说新事 (SyanChen7)",
+  "homepage": "https://github.com/SyanChen7/dancing-notes",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SyanChen7/dancing-notes.git"
+  }
+}

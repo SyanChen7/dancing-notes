@@ -1,0 +1,13 @@
+{
+  "title": "",
+  "subtitle": "",
+  "composer": "",
+  "svgPath": "score/score.svg",
+  "audioPath": "score/piano.wav",
+  "width": 1120,
+  "height": 800,
+  "musicDuration": 1,
+  "events": [],
+  "activations": [],
+  "camera": []
+}

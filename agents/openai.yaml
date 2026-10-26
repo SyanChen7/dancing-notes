@@ -1,0 +1,3 @@
+interface:
+  display_name: "Dancing Notes · 跳跃的音符"
+  short_description: "复用发光小球与连续跳跃效果，将乐谱和 MIDI 制作成同步的 3D 曲谱动画"

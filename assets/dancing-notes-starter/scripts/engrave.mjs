@@ -1,0 +1,13 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import createModule from 'verovio/wasm';
+import {VerovioToolkit} from 'verovio/esm';
+const [input,output]=process.argv.slice(2);
+if(!input||!output)throw Error('Usage: node scripts/engrave.mjs identified.musicxml output-directory');
+fs.mkdirSync(output,{recursive:true});
+const tk=new VerovioToolkit(await createModule());
+tk.resetXmlIdSeed(1);
+tk.setOptions({scale:40,pageWidth:2800,pageHeight:3600,breaks:'encoded',adjustPageHeight:true,header:'none',footer:'none',svgViewBox:true,spacingStaff:12});
+if(!tk.loadData(fs.readFileSync(input,'utf8')))throw Error(tk.getLog());
+for(let page=1;page<=tk.getPageCount();page++)fs.writeFileSync(path.join(output,'page-'+page+'.svg'),tk.renderToSVG(page));
+console.log('Engraved',tk.getPageCount(),'pages. Choose/compose the required score pages; never silently drop later pages.');
