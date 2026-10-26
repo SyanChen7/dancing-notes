@@ -10,7 +10,7 @@
 
 ## 效果示范
 
-[查看 / 下载示范视频：dancing-notes-sample.mp4](examples/dancing-notes-sample.mp4)
+https://github.com/user-attachments/assets/d2bd6c9f-3c6a-42d2-ac9a-dcbd1495ab67
 
 1920 × 1080 · 30 fps · 约 10 秒 · 约 5.4 MB，含音轨。
 
